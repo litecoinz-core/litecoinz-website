@@ -7,7 +7,7 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="bootstrap.min.css" >
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="litecoinz.css">
 <link rel="shortcut icon" href="img/favicon.ico"/>
 
@@ -35,7 +35,7 @@
 
 <div class="bg-dark text-secondary p-0">
 <div class="bg-texture m-0 px-4 py-5">
-<img class="d-block mx-auto mb-5 img-fluid" src="img/logo.png" alt="">
+<img class="d-block mx-auto mb-5 img-fluid" src="img/logo.webp" width="100%" height="100%" loading="lazy" alt="LitecoinZ">
 <h1 class="display-5 fw-bold text-white text-center">Zk-SNARKs Privacy Coin</h1>
 <div class="col-lg-6 mx-auto">
 <p class="fs-5 mb-5 text-white text-center">LitecoinZ (LTZ) in an open source cryptocurrency that is the 
@@ -140,13 +140,13 @@ GPUs is believed to democratize the ownership of the network.</p>
 
 <div class="row">
 <div class="col">
-<iframe src="https://coinpaprika.com/coin/ltz-litecoinz/embed/?interval=0&modules[]=market_details&modules[]=chart&nightMode=false&primaryCurrency=USD&updateActive=false" width="100%"  height="650px" frameborder="0"></iframe>
+<iframe name="coinpaprika" width="100%" height="650px" frameborder="0" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe>
 </div>
 </div>
 
 <div class="row">
 	<div class="col">
-		<img class="d-block mx-auto mb-5 mt-5 img-fluid" src="img/icon.png" height="64px" width="64px" alt=""></img>
+		<img class="d-block mx-auto mb-5 mt-4 img-fluid" src="img/icon.webp" height="64px" width="64px" loading="lazy" alt="LitecoinZ Logo"></img>
 	</div>
 </div>
 
@@ -155,9 +155,10 @@ GPUs is believed to democratize the ownership of the network.</p>
 <div id="footer" class="px-4 py-1 bg-secondary text-end">
 </div>
 
-<script src="bootstrap.bundle.min.js"></script>
+<script async src="bootstrap.bundle.min.js"></script>
 <script src="jquery-3.6.0.slim.min.js"></script>
 <script src="./litecoinz.js"></script>
 <script>$(function() {$('.nav-index').addClass('active');});</script>
+<script async defer>$(document).ready(function() {(window.frames || document.frames)["coinpaprika"].window.location = "https://coinpaprika.com/coin/ltz-litecoinz/embed/?interval=0&modules[]=market_details&modules[]=chart&nightMode=false&primaryCurrency=USD&updateActive=false";});</script>
 </body>
 </html>
