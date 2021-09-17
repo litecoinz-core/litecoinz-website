@@ -35,7 +35,7 @@
 
 <div class="bg-dark text-secondary p-0">
 <div class="bg-texture m-0 px-4 py-5">
-<img class="d-block mx-auto mb-5 img-fluid" src="img/logo.webp" width="370px" height="125px" loading="lazy" alt="LitecoinZ">
+<img class="d-block mx-auto mb-5 img-fluid" src="img/logo.webp" width="370" height="125" loading="lazy" alt="LitecoinZ">
 <h1 class="display-5 fw-bold text-white text-center">Zk-SNARKs Privacy Coin</h1>
 <div class="col-lg-6 mx-auto">
 <p class="fs-5 mb-5 text-white text-center">LitecoinZ (LTZ) in an open source cryptocurrency that is the 
@@ -50,8 +50,8 @@ world's first Zcash fork to be merged back into the mainline Bitcoin codebase.</
 </ul>
 <p class="fs-4 mb-4 text-white fst-italic fw-bold text-center">LitecoinZ is the private bank you own.</p>
 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-<a type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" href="wallets.html">Get A Wallet <i class="bi bi-cloud-download"></i></a>
-<a type="button" class="btn btn-outline-light btn-lg px-4" href="community.html">Join Community <i class="bi bi-people"></i></a>
+<a class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" href="wallets.html">Get A Wallet <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-outline-light btn-lg px-4" href="community.html">Join Community <i class="bi bi-people"></i></a>
 </div>
 </div>
 </div>
@@ -129,6 +129,7 @@ GPUs is believed to democratize the ownership of the network.</p>
 <th scope="row">White Paper</th>
 <td><a href="https://litecoinz.org/downloads/LITECOINZ-WHITE-PAPER.pdf">PDF</a></td>
 </tr>
+<tr>
 <th scope="row">Block Explorers</th>
 <td><a href="https://insight.litecoinz.org">insight.litecoinz.org</a> <a href="https://explorer.litecoinz.org">explorer.litecoinz.org</a></td>
 </tr>
@@ -140,13 +141,13 @@ GPUs is believed to democratize the ownership of the network.</p>
 
 <div class="row">
 <div class="col">
-<iframe name="coinpaprika" width="100%" height="650px" frameborder="0" sandbox="allow-same-origin allow-scripts" loading="lazy"></iframe>
+<iframe name="coinpaprika" style="width:100%;height:650px;border:0px" loading="lazy"></iframe>
 </div>
 </div>
 
 <div class="row">
 	<div class="col">
-		<img class="d-block mx-auto mb-5 mt-4 img-fluid" src="img/icon.webp" height="64px" width="64px" loading="lazy" alt="LitecoinZ Logo"></img>
+		<img class="d-block mx-auto mb-5 mt-4 img-fluid" src="img/icon.webp" height="64" width="64" loading="lazy" alt="LitecoinZ Logo">
 	</div>
 </div>
 
@@ -157,8 +158,8 @@ GPUs is believed to democratize the ownership of the network.</p>
 
 <script async src="bootstrap.bundle.min.js"></script>
 <script src="jquery-3.6.0.slim.min.js"></script>
-<script src="./litecoinz.js"></script>
+<script src="litecoinz.js"></script>
 <script>$(function() {$('.nav-index').addClass('active');});</script>
-<script async defer>$(document).ready(function() {(window.frames || document.frames)["coinpaprika"].window.location = "https://coinpaprika.com/coin/ltz-litecoinz/embed/?interval=0&modules[]=market_details&modules[]=chart&nightMode=false&primaryCurrency=USD&updateActive=false";});</script>
+<script async defer src="iframe.js"></script>
 </body>
 </html>

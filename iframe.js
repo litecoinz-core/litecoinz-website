@@ -1,0 +1,1 @@
+$(document).ready(function() {(window.frames || document.frames)["coinpaprika"].window.location = "https://coinpaprika.com/coin/ltz-litecoinz/embed/?interval=0&modules[]=market_details&modules[]=chart&nightMode=false&primaryCurrency=USD&updateActive=false";});
