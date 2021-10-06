@@ -7,11 +7,11 @@
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="bootstrap.min.css" >
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="litecoinz.css">
 <link rel="shortcut icon" href="img/favicon.ico"/>
 
-<title>LitecoinZ | Home</title>
+<title>LitecoinZ - Zk-SNARKs Privacy Coin</title>
 </head>
 <body>
 
@@ -35,7 +35,7 @@
 
 <div class="bg-dark text-secondary p-0">
 <div class="bg-texture m-0 px-4 py-5">
-<img class="d-block mx-auto mb-5 img-fluid" src="img/logo.png" alt="">
+<img class="d-block mx-auto mb-5 img-fluid" src="img/logo.webp" width="370" height="125" loading="lazy" alt="LitecoinZ">
 <h1 class="display-5 fw-bold text-white text-center">Zk-SNARKs Privacy Coin</h1>
 <div class="col-lg-6 mx-auto">
 <p class="fs-5 mb-5 text-white text-center">LitecoinZ (LTZ) in an open source cryptocurrency that is the 
@@ -50,8 +50,8 @@ world's first Zcash fork to be merged back into the mainline Bitcoin codebase.</
 </ul>
 <p class="fs-4 mb-4 text-white fst-italic fw-bold text-center">LitecoinZ is the private bank you own.</p>
 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-<a type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" href="wallets.html">Get A Wallet <i class="bi bi-cloud-download"></i></a>
-<a type="button" class="btn btn-outline-light btn-lg px-4" href="community.html">Join Community <i class="bi bi-people"></i></a>
+<a class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" href="wallets.html">Get A Wallet <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-outline-light btn-lg px-4" href="community.html">Join Community <i class="bi bi-people"></i></a>
 </div>
 </div>
 </div>
@@ -61,7 +61,7 @@ world's first Zcash fork to be merged back into the mainline Bitcoin codebase.</
 
 
 <div class="row mb-5">
-<h1 class="display-6 mb-4 mt-4">Blockchain Information</h1>
+<h2 class="display-6 mb-4 mt-4">Blockchain Information</h2>
 
 <div class="col-md-7">
 <p>LitecoinZ is a fork of <a href="https://z.cash">Zcash</a>, which in turn is a fork of 
@@ -77,7 +77,7 @@ use of <em>shielded addresses</em> also known as <em>z-addresses</em>. These add
 <a href="https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof">zk-SNARKs</a> 
 zero knowledge proofs to anonymize the source, destination, and amount
 of transactions between two shielded addresses. As is also the case with Zcash,
-standard Bitcoin addresses are also available in LitecoinZ due the high computational
+standard Bitcoin addresses are also available in LitecoinZ due to the high computational
 requirements of shielded addresses.</p>
 <p>Like its parent cryptocurrencies, LitecoinZ utilizes the concept of 
 <a href="https://en.wikipedia.org/wiki/Proof_of_work">proof of work</a>
@@ -129,6 +129,7 @@ GPUs is believed to democratize the ownership of the network.</p>
 <th scope="row">White Paper</th>
 <td><a href="https://litecoinz.org/downloads/LITECOINZ-WHITE-PAPER.pdf">PDF</a></td>
 </tr>
+<tr>
 <th scope="row">Block Explorers</th>
 <td><a href="https://insight.litecoinz.org">insight.litecoinz.org</a> <a href="https://explorer.litecoinz.org">explorer.litecoinz.org</a></td>
 </tr>
@@ -140,13 +141,13 @@ GPUs is believed to democratize the ownership of the network.</p>
 
 <div class="row">
 <div class="col">
-<iframe src="https://coinpaprika.com/coin/ltz-litecoinz/embed/?interval=0&modules[]=market_details&modules[]=chart&nightMode=false&primaryCurrency=USD&updateActive=false" width="100%"  height="650px" frameborder="0"></iframe>
+<iframe name="coinpaprika" style="width:100%;height:650px;border:0px" loading="lazy"></iframe>
 </div>
 </div>
 
 <div class="row">
 	<div class="col">
-		<img class="d-block mx-auto mb-5 mt-5 img-fluid" src="img/icon.png" height="64px" width="64px" alt=""></img>
+		<img class="d-block mx-auto mb-5 mt-4 img-fluid" src="img/icon.webp" height="64" width="64" loading="lazy" alt="LitecoinZ Logo">
 	</div>
 </div>
 
@@ -155,9 +156,10 @@ GPUs is believed to democratize the ownership of the network.</p>
 <div id="footer" class="px-4 py-1 bg-secondary text-end">
 </div>
 
-<script src="bootstrap.bundle.min.js"></script>
+<script async src="bootstrap.bundle.min.js"></script>
 <script src="jquery-3.6.0.slim.min.js"></script>
-<script src="./litecoinz.js"></script>
+<script src="litecoinz.js"></script>
 <script>$(function() {$('.nav-index').addClass('active');});</script>
+<script async defer src="iframe.js"></script>
 </body>
 </html>
