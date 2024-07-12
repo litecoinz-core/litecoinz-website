@@ -1,0 +1,78 @@
+@media only screen and (min-width: 576px) {
+	.anniversary-banner {
+		background-image: url("./img/anniversary-banner.png");
+		background-repeat: no-repeat;
+		background-size: 150px 131px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.anniversary-banner {
+		background-size: initial;
+	}
+}
+
+.bg-banner {
+background-color: #ffc033;
+}
+.bg-dark {
+background-color: #70286e !important;
+background: linear-gradient(180deg, rgba(51,34,51,1) 0%, rgba(112,40,110,1) 100%);
+}
+.bg-secondary {
+background-color: #EEE !important;
+border-top: #DDD 1px solid;
+}
+.bg-texture {
+background-image: url("./img/bg.png");
+}
+.btn-outline-info {
+color: #ffc033;
+border-color: #ffc033;
+}
+.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:visited {
+background-color: #ffc033;
+border-color: #ffc033;
+}
+.btn-outline-info:focus, .btn-outline-info:active:focus {
+box-shadow: 0 0 0 .25rem #c89626;
+}
+.btn-primary {
+color: #FFF;
+background-color: #70286e;
+border-color: #70286e;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+background-color: #70286e;
+border-color: #70286e;
+}
+.btn-primary:focus, .btn-primary:active:focus {
+box-shadow: 0 0 0 .25rem #70286e;
+}
+.text-info {
+color: #e988e7 !important;
+}
+.nav-pills .btn-outline-secondary.active {
+background-color: #70286e;
+border-color: transparent;
+}
+.btn-outline-secondary {
+color: #70286e;
+border-color: transparent;
+}
+.btn-outline-secondary:hover {
+color: #ffc033;
+background-color: transparent;
+border-color: transparent;
+}
+.btn-outline-secondary:focus, .btn-outline-secondary:active:focus {
+box-shadow: 0 0 0 .25rem #70286e;
+border-color: #70286e;
+background-color: transparent;
+color: #70286e; 
+}
+h1 {
+color: #70286e;
+}
+h2 {
+color: #70286e;
+}

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css" >
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="litecoinz.css">
+<link rel="shortcut icon" href="img/favicon.ico"/>
+
+<title>LitecoinZ | Wallets</title>
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-light bg-light">
+
+<div class="container-fluid d-none d-md-flex">
+<div class="nav-body nav nav-pills nav-fill mx-auto">
+<a class="btn" href="#">&nbsp;</a>
+</div>
+</div>
+
+<div class="container-fluid d-block d-md-none">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="nav-body nav nav-pills nav-fill collapse row py-2 justify-content-center" id="navbarToggleExternalContent">
+</div>
+</div>
+
+</nav>
+
+<div class="bg-dark text-secondary p-0">
+<div class="bg-texture m-0 px-4 py-5">
+<h1 class="display-5 text-light">Wallets</h1>
+</div>
+</div>
+
+<div class="px-4 py-5 bg-light">
+
+<div class="row mb-5">
+<h2 class="display-6 mb-5">Full Node &mdash; LitecoinZ Core</h2>
+
+<div class="col-md-7">
+<p class="mb-3">LitecoinZ Core is the reference node and wallet for LitecoinZ. It includes all features
+of the network and is based on Bitcoin Core, the original Bitcoin software. Being a full node, it must
+download the entire LitecoinZ blockchain before being able to make new transactions.</p>
+
+<table class="table table-striped mb-5 d-none d-md-table">
+<thead>
+<tr>
+<th class="text-break">Supported Platforms</th>
+<th class="text-break">Full Node</th>
+<th class="text-break">Immediately Usable</th>
+<th class="text-break">Shielded Addresses</th>
+<th class="text-break">Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows, Linux, Mac, Arm (RaspberryPi)</td>
+<td><i class="bi bi-check-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-striped mb-5 d-table d-md-none">
+<tbody>
+<tr><th>Supported Platforms</th><td class="text-break">Windows, Linux, Mac, Arm (RaspberryPi)</td></tr>
+<tr><th>Full Node</th><td><i class="bi bi-check-square"></i></td></tr>
+<tr><th>Immediately Usable</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Shielded Addresses</th><td><i class="bi bi-check-square"></i></td></tr>
+<tr><th>Open Source</th><td><i class="bi bi-check-square"></i></td></tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="col-md-5">
+<img class="d-block mx-auto mb-5 img-fluid" src="img/fullnode.webp" loading="lazy" alt="LitecoinZ Wallet">
+</div>
+
+<div class="col-md-12 mb-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://github.com/litecoinz-core/litecoinz/releases/download/v3.0.3/litecoinz-3.0.3-win64.zip">
+Windows <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://github.com/litecoinz-core/litecoinz/releases/download/v3.0.4rc1/litecoinz-3.0.3-x86_64-linux-gnu.tar.gz">
+Linux <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://github.com/litecoinz-core/litecoinz/releases/download/v3.0.3/litecoinz-3.0.3-osx-unsigned.dmg">
+Mac OSX <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://github.com/litecoinz-core/litecoinz/releases/download/v3.0.3/litecoinz-3.0.3-aarch64-linux-gnu.tar.gz">
+Arm64 (RaspberryPi) <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-info-outline px-4 me-sm-3 fw-bold" href="https://github.com/litecoinz-core/litecoinz">
+Source Code <i class="bi bi-github"></i></a>
+</div>
+
+</div>
+
+
+<div class="row mb-5">
+<h2 class="display-6 mb-5">Web Wallet</h2>
+
+
+<div class="col-md-5">
+<img class="d-block mx-auto mb-5 img-fluid" src="img/web-wallet.webp" loading="lazy" alt="LitecoinZ Web Wallet">
+</div>
+
+<div class="col-md-7">
+<p class="mb-3">The LitecoinZ web wallet is a quick way to create or access a wallet. The web wallet
+lacks many features of the full node, but does offer availability for any device with a browser
+and does not need to download the blockchain before use.</p>
+
+<table class="table table-striped mb-5 d-none d-md-table">
+<thead>
+<tr>
+<th class="text-break">Supported Platforms</th>
+<th class="text-break">Full Node</th>
+<th class="text-break">Immediately Usable</th>
+<th class="text-break">Shielded Addresses</th>
+<th class="text-break">Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Browser</td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-striped mb-5 d-table d-md-none">
+<tbody>
+<tr><th>Supported Platforms</th><td class="text-break">Browser</td></tr>
+<tr><th>Full Node</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Immediately Usable</th><td><i class="bi bi-check-square"></i></td></tr>
+<tr><th>Shielded Addresses</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Open Source</th><td><i class="bi bi-check-square"></i></td></tr>
+</tbody>
+</table>
+
+<div class="mb-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://wallet.litecoinz.org/">
+Wallet.litecoinz.org <i class="bi bi-link-45deg"></i></a>
+<a class="btn btn-info-outline px-4 me-sm-3 fw-bold" href="https://github.com/LitecoinZ-Community/litecoinz-web-wallet">
+Source Code <i class="bi bi-github"></i></a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row mb-5">
+<h2 class="display-6 mb-5">Android Wallet</h2>
+
+<div class="col-md-7">
+<p class="mb-3">The LitecoinZ android wallet is a simple and fast way to access LitecoinZ from your android phone.
+The android wallet lacks many features of the full node, but does not need to download the blockchain before use.</p>
+
+<table class="table table-striped mb-5 d-none d-md-table">
+<thead>
+<tr>
+<th class="text-break">Supported Platforms</th>
+<th class="text-break">Full Node</th>
+<th class="text-break">Immediately Usable</th>
+<th class="text-break">Shielded Addresses</th>
+<th class="text-break">Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Android</td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-striped mb-5 d-table d-md-none">
+<tbody>
+<tr><th>Supported Platforms</th><td class="text-break">Android</td></tr>
+<tr><th>Full Node</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Immediately Usable</th><td><i class="bi bi-check-square"></i></td></tr>
+<tr><th>Shielded Addresses</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Open Source</th><td><i class="bi bi-check-square"></i></td></tr>
+</tbody>
+</table>
+
+<div class="mb-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://play.google.com/store/apps/details?id=com.litecoinz.wallet">
+Google Play Store <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-info-outline px-4 me-sm-3 fw-bold" href="https://github.com/LitecoinZ-Community/litecoinz-copay-wallet">
+Source Code <i class="bi bi-github"></i></a>
+</div>
+
+</div>
+
+
+<div class="col-md-5">
+<img class="d-block my-auto mb-5 img-fluid" src="img/mobile-wallet.webp" loading="lazy" alt="LitecoinZ Web Wallet">
+</div>
+
+</div>
+
+
+<div class="row mb-5">
+<h2 class="display-6 mb-5">3rd Party Multi-coin Wallet &mdash; Hebe Wallet</h2>
+
+<div class="col-md-12">
+<p class="mb-3">Hebe Wallet is a mobile and browser-based wallet that supports LitecoinZ and many other
+cryptocurrencies and tokens.</p>
+
+<table class="table table-striped mb-5 d-none d-md-table">
+<thead>
+<tr>
+<th class="text-break">Supported Platforms</th>
+<th class="text-break">Full Node</th>
+<th class="text-break">Immediately Usable</th>
+<th class="text-break">Shielded Addresses</th>
+<th class="text-break">Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS, Android, Browser</td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-striped mb-5 d-table d-md-none">
+<tbody>
+<tr><th>Supported Platforms</th><td class="text-break">Windows, Linux, Mac, Arm (RaspberryPi)</td></tr>
+<tr><th>Full Node</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Immediately Usable</th><td><i class="bi bi-check-square"></i></td></tr>
+<tr><th>Shielded Addresses</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Open Source</th><td><i class="bi bi-x-square"></i></td></tr>
+</tbody>
+</table>
+
+<div class="mb-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://itunes.apple.com/us/app/hebe-wallet/id1453374447?l=zh#?platform=iphone">
+Apple AppStore <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://play.google.com/store/apps/details?id=com.hebeblock.hebewallet">
+Google Play Store <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-info-outline px-4 me-sm-3 fw-bold" href="https://www.hebe.cc/">
+Homepage <i class="bi bi-link-45deg"></i></a>
+</div>
+
+</div>
+
+</div>
+
+<div class="row mb-5">
+<h2 class="display-6 mb-5">3rd Party Multi-coin Wallet &mdash; Vidulum.App</h2>
+
+<div class="col-md-12">
+<p class="mb-3">Vidulum.App is a mobile and browser-based wallet that supports LitecoinZ and many other
+cryptocurrencies.</p>
+
+<table class="table table-striped mb-5 d-none d-md-table">
+<thead>
+<tr>
+<th class="text-break">Supported Platforms</th>
+<th class="text-break">Full Node</th>
+<th class="text-break">Immediately Usable</th>
+<th class="text-break">Shielded Addresses</th>
+<th class="text-break">Open Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>iOS, Android, Browser</td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-check-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+<td><i class="bi bi-x-square"></i></td>
+</tr>
+</tbody>
+</table>
+
+<table class="table table-striped mb-5 d-table d-md-none">
+<tbody>
+<tr><th>Supported Platforms</th><td class="text-break">Windows, Linux, Mac, Arm (RaspberryPi)</td></tr>
+<tr><th>Full Node</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Immediately Usable</th><td><i class="bi bi-check-square"></i></td></tr>
+<tr><th>Shielded Addresses</th><td><i class="bi bi-x-square"></i></td></tr>
+<tr><th>Open Source</th><td><i class="bi bi-x-square"></i></td></tr>
+</tbody>
+</table>
+
+<div class="mb-5 d-grid gap-2 d-sm-flex justify-content-sm-center">
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://apps.apple.com/us/app/id1505859171">
+Apple AppStore <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://play.google.com/store/apps/details?id=com.vidulumwallet.app">
+Google Play Store <i class="bi bi-cloud-download"></i></a>
+<a class="btn btn-primary px-4 me-sm-3 fw-bold" href="https://wallet.vidulum.app/">
+Web Wallet <i class="bi bi-link-45deg"></i></a>
+<a class="btn btn-info-outline px-4 me-sm-3 fw-bold" href="https://vidulum.app/">
+Homepage <i class="bi bi-link-45deg"></i></a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="row">
+	<div class="col">
+		<img class="d-block mx-auto mb-5 mt-4 img-fluid" src="img/icon.webp" height="64" width="64" loading="lazy" alt="LitecoinZ Logo">
+	</div>
+</div>
+
+</div>
+
+<div id="footer" class="px-4 py-1 bg-secondary text-end">
+</div>
+
+<script async src="bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.0.slim.min.js"></script>
+<script src="litecoinz.js"></script>
+<script>$(function() {$('.nav-wallets').addClass('active');});</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+## REWRITE
+Options +FollowSymLinks
+
+RewriteEngine on
+
+## 301 Redirect Old File
+Redirect 301 /blacked/indexBlack.html /index.html
+Redirect 301 /blacked/networkBlack.html /links.html
+Redirect 301 /blacked/roadmapBlack.html /roadmap.html
+Redirect 301 /blacked/indexBlack /index
+Redirect 301 /blacked/networkBlack /links
+Redirect 301 /blacked/roadmapBlack /roadmap
+
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+## Prevent viewing of .htaccess file
+<Files .htaccess>
+  order allow,deny
+  deny from all
+</Files>
+
+## Prevent directory listings
+Options -Indexes
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access 1 year"
+  ExpiresByType image/jpeg "access 1 year"
+  ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+## HEADERS ##
+<IfModule mod_headers.c>
+  # 1 Month for most static assets
+  <filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </filesMatch>
+
+  # Hardening
+  Header always set Referrer-Policy "no-referrer"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" env=HTTPS
+  Header always set X-XSS-Protection "1; mode=block"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options nosniff
+  Header always add Content-Security-Policy "default-src 'self'; style-src 'report-sample' 'self' 'unsafe-inline' 'unsafe-hashes' 'sha256-aUH23tg0USePzwExCsOYuzAOoDM6iOKs/n0vXFhQWHs=' 'sha256-dKA7YcAYm7sgCETk1rl5DMbNo6a6UdQ/XHR8BcCn7tI='; script-src 'report-sample' 'self' 'unsafe-inline' 'unsafe-hashes' 'sha256-TZ6FqUrePY5jDMpFL0uTh7yFUV0BPCtqbVuMyqKoz2w=' 'sha256-Py1o8QY9cyUlXOE7s6PtglPH3iU/P2fBnN5GseFsPLc=' 'sha256-y0m+Kx1vfKs8GwVcCX6JnR4ZztPw82fuC2LdFwkn8Ks=' 'sha256-kvTcMXUIteYQZuo060wlER3MgQsY0cVVdqeBXUSkVFg=' 'sha256-QjTUgV3fVBHz9dbXq0hka6A6170YT7C8OhCeqWl+Mmw=' 'sha256-HAELbQ/wSMPPilsXnaXYM8Ys1Uk6FAb43MVJNpVQwTM='; child-src 'self' https://coinpaprika.com; frame-src 'self' https://coinpaprika.com; frame-ancestors 'self' https://coinpaprika.com; base-uri 'self'; img-src 'self' https://www.gstatic.com data:; upgrade-insecure-requests; form-action 'self'; object-src 'self'; worker-src 'none'; connect-src 'self'; report-uri https://litecoinz.report-uri.com/r/d/csp/reportOnly;"
+  Header always set Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://litecoinz.report-uri.com/a/d/g\"}],\"include_subdomains\":true}"
+  Header always set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
+  Header always set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+</IfModule>
+## HEADERS ##

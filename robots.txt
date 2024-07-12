@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /depends-sources/
+
+Sitemap: https://litecoinz.org/sitemap.xml

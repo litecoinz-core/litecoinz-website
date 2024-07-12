@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="bootstrap.min.css" >
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="litecoinz.css">
+<link rel="shortcut icon" href="img/favicon.ico"/>
+
+<title>LitecoinZ | Mining</title>
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-light bg-light">
+
+<div class="container-fluid d-none d-md-flex">
+<div class="nav-body nav nav-pills nav-fill mx-auto">
+<a class="btn" href="#">&nbsp;</a>
+</div>
+</div>
+
+<div class="container-fluid d-block d-md-none">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="nav-body nav nav-pills nav-fill collapse row py-2 justify-content-center" id="navbarToggleExternalContent">
+</div>
+</div>
+
+</nav>
+
+<div class="bg-dark text-secondary p-0">
+<div class="bg-texture m-0 px-4 py-5">
+<h1 class="display-5 text-light">Mining</h1>
+</div>
+</div>
+
+<div class="px-4 py-5 bg-light">
+
+<div class="row mb-5">
+<h2 class="display-6 mb-4">Getting Started Mining LTZ</h2>
+
+<div class="col-md-5 mb-4">
+<p>You can help validate LitecoinZ transactions and get paid real money by joining our network of miners.
+Any computer with a dedicated graphics card can contribute. Follow the steps below to get started mining.</p>
+<ol>
+<li class="mb-2">Choose an <a href="wallets.html">LTZ wallet</a> and get your receiving address ready.</li>
+<li class="mb-2">Choose an LTZ mining pool from the list. Pools are servers that combine many miners into a team.
+Consider picking one that has fewer miners so our network has no single point of failure.</li>
+<li class="mb-2">Choose the appropriate mining software from the list. Pick one made for your brand of
+graphics card.</li>
+<li class="mb-2">Launch your mining software using the options provided by the mining pool you picked and
+your personal receiving address.</li>
+</ol>
+</div>
+
+<div class="col-md-7">
+<table class="table table-striped">
+<caption>Table of mining pools</caption>
+<tbody>
+<tr>
+<th scope="row" class="text-break"><a href="https://miningpoolstats.stream/litecoinz">Miningpoolstats.stream</a></th>
+<td>Mining pool tracker. This site is updated more frequently than our list.</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://wheretomine.io/coins/litecoinz">Wheretomine.io</a></th>
+<td>Mining pool tracker. Not updated often, not recommended.</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://aikapool.com/ltz">Aikapool.com</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="http://crypto.2mars.biz/">Crypto.2mars.biz</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://btcz.darkfibermines.com/">Darkfibermines.com</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://equihash.pro/coins/litecoinz">Equihash.pro</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://pool.mecrypto.club/poolstatus?coin=LTZ">Mecrypto.club</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://www.nlpool.nl/">Nlpool.nl</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="http://ltz.pcmining.xyz/">Pcmining.xyz</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://zergpool.com/site/mining?algo=equihash144">Zergpool.com</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://zeropool.io/">Zeropool.io</a></th>
+<td>Mining Pool</td>
+</tr>
+<tr>
+<th scope="row" class="text-break"><a href="https://zpool.ca/algo/equihash144">ZPool.CA</a></th>
+<td>Mining Pool</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="row">
+<h2 class="display-6 mb-4">Mining Software</h2>
+<p class="mb-5">Download one of the mining software packages below depending on your brand of graphics card. It is a good idea to test each miner
+so you can see which has the fastest hash rate for your particular hardware.</p>
+<div class="col-md-12 mb-2">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">MiniZ</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Nvidia Miner</h6>
+	<p class="card-text">Usage: <code>miniZ --url=[your ltz address]@[your miningpool.com]:[mining pool port] --par=144,5 --pers=ZcashPoW</code></p>
+    <a href="https://miniz.cc/" class="card-link">Link</a>
+  </div>
+</div>
+</div>
+
+<div class="col-md-12 mb-2">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">GMiner</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Nvidia & AMD Miner</h6>
+	<p class="card-text">Usage: <code>miner --server [your miningpool.com]:[mining pool port] --user [your ltz address] --algo equihash144_5 --pers=ZcashPoW</code></p>
+    <a href="https://github.com/develsoftware/GMinerRelease/releases" class="card-link">Link</a>
+  </div>
+</div>
+</div>
+
+<div class="col-md-12 mb-2">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">lolMiner</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Nvidia & AMD Miner</h6>
+	<p class="card-text">Usage: <code>lolMiner --pool [your miningpool.com]:[mining pool port] --user [your ltz address] --algo EQUI144_5 --pers=ZcashPoW</code></p>
+    <a href="https://github.com/Lolliedieb/lolMiner-releases/releases" class="card-link">Link</a>
+  </div>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+	<div class="col">
+		<img class="d-block mx-auto mb-5 mt-4 img-fluid" src="img/icon.webp" height="64" width="64" loading="lazy" alt="LitecoinZ Logo">
+	</div>
+</div>
+
+</div>
+
+<div id="footer" class="px-4 py-1 bg-secondary text-end">
+</div>
+
+<script async src="bootstrap.bundle.min.js"></script>
+<script src="jquery-3.6.0.slim.min.js"></script>
+<script src="litecoinz.js"></script>
+<script>$(function() {$('.nav-mining').addClass('active');});</script>
+</body>
+</html>
